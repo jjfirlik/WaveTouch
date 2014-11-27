@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F01D1B301A2774BB00E7E3C5 /* Oscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D1B2C1A2774BB00E7E3C5 /* Oscillator.m */; };
 		F01D1B311A2774BB00E7E3C5 /* SynthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D1B2E1A2774BB00E7E3C5 /* SynthCore.m */; };
+		F0E3BF8E1A27BC4800AF3B82 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E3BF8C1A27BC4800AF3B82 /* KeyboardViewController.m */; };
+		F0E3BF8F1A27BC4800AF3B82 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E3BF8D1A27BC4800AF3B82 /* KeyboardViewController.xib */; };
 		F0EF2E3C1A26717200E63DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E3B1A26717200E63DD1 /* main.m */; };
 		F0EF2E3F1A26717200E63DD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E3E1A26717200E63DD1 /* AppDelegate.m */; };
 		F0EF2E421A26717200E63DD1 /* WaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E411A26717200E63DD1 /* WaveViewController.m */; };
@@ -35,6 +37,9 @@
 		F01D1B2D1A2774BB00E7E3C5 /* SynthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthCore.h; sourceTree = "<group>"; };
 		F01D1B2E1A2774BB00E7E3C5 /* SynthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynthCore.m; sourceTree = "<group>"; };
 		F01D1B2F1A2774BB00E7E3C5 /* SynthGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthGlobals.h; sourceTree = "<group>"; };
+		F0E3BF8B1A27BC4800AF3B82 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		F0E3BF8C1A27BC4800AF3B82 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		F0E3BF8D1A27BC4800AF3B82 /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
 		F0EF2E361A26717200E63DD1 /* WaveTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EF2E3A1A26717200E63DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0EF2E3B1A26717200E63DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +98,16 @@
 			name = Waveform;
 			sourceTree = "<group>";
 		};
+		F0E3BF901A27C0DB00AF3B82 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F0E3BF8B1A27BC4800AF3B82 /* KeyboardViewController.h */,
+				F0E3BF8C1A27BC4800AF3B82 /* KeyboardViewController.m */,
+				F0E3BF8D1A27BC4800AF3B82 /* KeyboardViewController.xib */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
 		F0EF2E2D1A26717200E63DD1 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +131,7 @@
 			children = (
 				F0EF2E3D1A26717200E63DD1 /* AppDelegate.h */,
 				F0EF2E3E1A26717200E63DD1 /* AppDelegate.m */,
+				F0E3BF901A27C0DB00AF3B82 /* Keyboard */,
 				F094F3591A26D78400789F27 /* Waveform */,
 				F094F3581A26D77A00789F27 /* Synth */,
 				F0EF2E431A26717200E63DD1 /* Main.storyboard */,
@@ -235,6 +251,7 @@
 				F0EF2E451A26717200E63DD1 /* Main.storyboard in Resources */,
 				F0EF2E4A1A26717200E63DD1 /* LaunchScreen.xib in Resources */,
 				F0EF2E471A26717200E63DD1 /* Images.xcassets in Resources */,
+				F0E3BF8F1A27BC4800AF3B82 /* KeyboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +271,7 @@
 			files = (
 				F0EF2E421A26717200E63DD1 /* WaveViewController.m in Sources */,
 				F0EF2E3F1A26717200E63DD1 /* AppDelegate.m in Sources */,
+				F0E3BF8E1A27BC4800AF3B82 /* KeyboardViewController.m in Sources */,
 				F0EF2E3C1A26717200E63DD1 /* main.m in Sources */,
 				F01D1B311A2774BB00E7E3C5 /* SynthCore.m in Sources */,
 				F0EF2E611A26769C00E63DD1 /* WaveView.m in Sources */,

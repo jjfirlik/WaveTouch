@@ -11,9 +11,10 @@
 
 @interface WaveViewController ()
 
+@property (strong, nonatomic) UITabBarController *tbc;
 @property (strong, nonatomic) WaveView *waveView;
 @property (strong, nonatomic) NSMutableArray *waveTable;
-@property (strong, nonatomic) SynthCore *synthCore;
+@property (readwrite, nonatomic) SynthCore *synthCore;
 
 @end
 
@@ -22,8 +23,9 @@
 - (void)loadView
 {
     self.waveView = [[WaveView alloc] initWithFrame:CGRectZero];
-    self.view = self.waveView;
     self.waveView.delegate = self;
+    
+    self.view = self.waveView;
     
     self.synthCore = [[SynthCore alloc] init];
 }
@@ -112,7 +114,7 @@
     NSArray *scaledPointsTable = [self scalePointsTable:pointsTable];
     [self makeWaveTable:scaledPointsTable];
     [self.synthCore setWaveTable:self.waveTable];
-    [self.synthCore noteOn:45];
+    //[self.synthCore noteOn:45];
     
     for (NSValue *v in self.waveTable)
     {

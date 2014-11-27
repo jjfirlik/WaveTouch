@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "WaveView.h"
+@class SynthCore;
 
 @interface WaveViewController : UIViewController <WaveViewDelegate>
+
+@property (nonatomic, readonly) SynthCore *synthCore;
 
 @end
 

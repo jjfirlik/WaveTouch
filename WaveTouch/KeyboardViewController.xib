@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController">
+            <connections>
+                <outlet property="A" destination="OtH-Rd-FeG" id="inB-Zn-8xK"/>
+                <outlet property="ASharp" destination="m2j-xn-zvB" id="Xp6-6o-z9h"/>
+                <outlet property="B" destination="eMB-rW-nMy" id="08a-X2-cXd"/>
+                <outlet property="CSharp" destination="bkH-uw-1Fi" id="N8t-Bx-Ssk"/>
+                <outlet property="D" destination="CHe-DT-TzN" id="xzD-4l-L3b"/>
+                <outlet property="DSharp" destination="UEG-bO-GRw" id="ny2-67-hNU"/>
+                <outlet property="E" destination="mN6-Op-9fE" id="ujw-cf-1yl"/>
+                <outlet property="F" destination="6gC-8z-S5X" id="Ncy-3V-Hpv"/>
+                <outlet property="FSharp" destination="TzB-0w-tzj" id="QmC-3C-hxy"/>
+                <outlet property="G" destination="NFG-ch-ruP" id="bkj-H2-dUX"/>
+                <outlet property="GSharp" destination="736-aj-pDp" id="VSd-Oa-rWX"/>
+                <outlet property="highC" destination="mUT-K4-ikR" id="MD2-Bg-iM4"/>
+                <outlet property="lowC" destination="vRs-zg-Ewf" id="gRa-0Q-CWp"/>
+                <outlet property="octaveDown" destination="QKm-at-OTi" id="Td5-Eb-9p9"/>
+                <outlet property="octaveUp" destination="cCb-JY-NXK" id="dCH-Xo-xDX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="60" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRs-zg-Ewf" userLabel="C">
+                    <rect key="frame" x="0.0" y="0.0" width="63" height="320"/>
+                    <color key="backgroundColor" red="0.87763247280000001" green="0.86050470810000002" blue="0.82928090139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="IPr-YO-N9N"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="VFV-iO-PVu"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="svj-kU-Ztb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="62" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHe-DT-TzN" userLabel="D">
+                    <rect key="frame" x="63" y="0.0" width="63" height="320"/>
+                    <color key="backgroundColor" red="0.87763247280000001" green="0.86050470810000002" blue="0.82928090139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="maI-Me-kVP"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="Y5Q-hG-fId"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="eyE-id-gXm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="64" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mN6-Op-9fE" userLabel="E">
+                    <rect key="frame" x="126" y="0.0" width="63" height="320"/>
+                    <color key="backgroundColor" red="0.87763247280000001" green="0.86050470810000002" blue="0.82928090139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="2Gt-wq-sWu"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="7ZW-Gr-Lbb"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="KqY-03-KxT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="65" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gC-8z-S5X" userLabel="F">
+                    <rect key="frame" x="189" y="0.0" width="63" height="320"/>
+                    <color key="backgroundColor" red="0.87763247280000001" green="0.86050470810000002" blue="0.82928090139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="dP8-Ak-iiG"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="ukL-nw-PDY"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="yx2-tD-DJ4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="67" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFG-ch-ruP" userLabel="G">
+                    <rect key="frame" x="252" y="0.0" width="63" height="320"/>
+                    <color key="backgroundColor" red="0.87763247280000001" green="0.86050470810000002" blue="0.82928090139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="QFW-31-oIf"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="laj-v4-B5R"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="vne-J8-2uH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="69" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtH-Rd-FeG" userLabel="A">
+                    <rect key="frame" x="315" y="0.0" width="63" height="320"/>
+                    <color key="backgroundColor" red="0.87763247280000001" green="0.86050470810000002" blue="0.82928090139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="Sr8-FC-OtR"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="GW5-1O-BJo"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="LDi-99-H12"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="71" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMB-rW-nMy" userLabel="B">
+                    <rect key="frame" x="378" y="0.0" width="63" height="320"/>
+                    <color key="backgroundColor" red="0.87763247280000001" green="0.86050470810000002" blue="0.82928090139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="Nix-cQ-dZ1"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="1LH-ln-aNe"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="Osd-Zs-dmz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="72" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUT-K4-ikR" userLabel="C">
+                    <rect key="frame" x="441" y="0.0" width="63" height="320"/>
+                    <color key="backgroundColor" red="0.87763247280000001" green="0.86050470810000002" blue="0.82928090139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="Ee7-GK-VYo"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="6M7-Q3-IgV"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="VmH-HN-gV2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="61" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkH-uw-1Fi" userLabel="C#/Db">
+                    <rect key="frame" x="31" y="0.0" width="58" height="187"/>
+                    <color key="backgroundColor" red="0.019607843829999999" green="0.015686275440000001" blue="0.015686275440000001" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="mbj-0u-KEz"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="ajU-ab-xpg"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="nAT-xV-6Mm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="63" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEG-bO-GRw" userLabel="D#/Eb">
+                    <rect key="frame" x="94" y="0.0" width="58" height="187"/>
+                    <color key="backgroundColor" red="0.019607843829999999" green="0.015686275440000001" blue="0.015686275440000001" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="rvv-HN-ew0"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="ssZ-6c-OsW"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="zQZ-Et-Nvl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="66" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzB-0w-tzj" userLabel="F#/Gb">
+                    <rect key="frame" x="220" y="0.0" width="58" height="187"/>
+                    <color key="backgroundColor" red="0.019607843829999999" green="0.015686275440000001" blue="0.015686275440000001" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="iVB-Jc-2GY"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="dvL-52-3jR"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="zdB-v4-YSV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="68" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="736-aj-pDp" userLabel="G#/Ab">
+                    <rect key="frame" x="283" y="0.0" width="58" height="187"/>
+                    <color key="backgroundColor" red="0.019607843829999999" green="0.015686275440000001" blue="0.015686275440000001" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="jpw-yU-3Ay"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="cqA-Ur-4qv"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="eqZ-S3-fyt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="70" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2j-xn-zvB" userLabel="G#/Ab">
+                    <rect key="frame" x="346" y="0.0" width="58" height="187"/>
+                    <color key="backgroundColor" red="0.019607843829999999" green="0.015686275440000001" blue="0.015686275440000001" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playNote:" destination="-1" eventType="touchDown" id="NA9-eG-bni"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpOutside" id="dqP-dm-x2o"/>
+                        <action selector="stopNote:" destination="-1" eventType="touchUpInside" id="hFz-bL-yxq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKm-at-OTi">
+                    <rect key="frame" x="504" y="160" width="64" height="160"/>
+                    <state key="normal" title="8vb">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="decreaseOctave:" destination="-1" eventType="touchUpInside" id="HJF-Tk-XoP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-JY-NXK">
+                    <rect key="frame" x="504" y="0.0" width="64" height="160"/>
+                    <state key="normal" title="8va">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="increaseOctave:" destination="-1" eventType="touchUpInside" id="zVE-9b-kVJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="469" y="275"/>
+        </view>
+    </objects>
+</document>

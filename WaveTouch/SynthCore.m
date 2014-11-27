@@ -11,7 +11,7 @@
 #import "SynthGlobals.h"
 
 #define BUFFER_COUNT 3
-#define BUFFER_DURATION 0.5
+#define BUFFER_DURATION 0.012 // 1024 / 44100
 
 @interface SynthCore ()
 
@@ -165,6 +165,8 @@ static void MyAQOutputCallback(void *inUserData,
     self.m_bNoteOn = NO;
     CheckError(AudioQueuePause(audioQueue),
                "Couldn't pause the AudioQueue");
+    CheckError(AudioQueueFlush(audioQueue),
+               "Couldn't flush buffer");
     
 }
 

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WaveViewController.h"
+#import "KeyboardViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +21,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    UITabBarController *tbc = [[UITabBarController alloc] init];
+    
     WaveViewController *wvc = [[WaveViewController alloc] init];
-    self.window.rootViewController = wvc;
+    wvc.title = @"Waveform";
+    
+    KeyboardViewController *kvc = [[KeyboardViewController alloc] init];
+    kvc.title = @"Keyboard";
+    
+    tbc.viewControllers = [NSArray arrayWithObjects:wvc, kvc, nil];
+    
+    self.window.rootViewController = tbc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
