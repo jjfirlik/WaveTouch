@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01D1B301A2774BB00E7E3C5 /* Oscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D1B2C1A2774BB00E7E3C5 /* Oscillator.m */; };
+		F01D1B311A2774BB00E7E3C5 /* SynthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F01D1B2E1A2774BB00E7E3C5 /* SynthCore.m */; };
 		F0EF2E3C1A26717200E63DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E3B1A26717200E63DD1 /* main.m */; };
 		F0EF2E3F1A26717200E63DD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E3E1A26717200E63DD1 /* AppDelegate.m */; };
-		F0EF2E421A26717200E63DD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E411A26717200E63DD1 /* ViewController.m */; };
+		F0EF2E421A26717200E63DD1 /* WaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E411A26717200E63DD1 /* WaveViewController.m */; };
 		F0EF2E451A26717200E63DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EF2E431A26717200E63DD1 /* Main.storyboard */; };
 		F0EF2E471A26717200E63DD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EF2E461A26717200E63DD1 /* Images.xcassets */; };
 		F0EF2E4A1A26717200E63DD1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EF2E481A26717200E63DD1 /* LaunchScreen.xib */; };
 		F0EF2E561A26717300E63DD1 /* WaveTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E551A26717300E63DD1 /* WaveTouchTests.m */; };
+		F0EF2E611A26769C00E63DD1 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF2E601A26769C00E63DD1 /* WaveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +30,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F01D1B2B1A2774BB00E7E3C5 /* Oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
+		F01D1B2C1A2774BB00E7E3C5 /* Oscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Oscillator.m; sourceTree = "<group>"; };
+		F01D1B2D1A2774BB00E7E3C5 /* SynthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthCore.h; sourceTree = "<group>"; };
+		F01D1B2E1A2774BB00E7E3C5 /* SynthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynthCore.m; sourceTree = "<group>"; };
+		F01D1B2F1A2774BB00E7E3C5 /* SynthGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthGlobals.h; sourceTree = "<group>"; };
 		F0EF2E361A26717200E63DD1 /* WaveTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EF2E3A1A26717200E63DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0EF2E3B1A26717200E63DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0EF2E3D1A26717200E63DD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0EF2E3E1A26717200E63DD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0EF2E401A26717200E63DD1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0EF2E411A26717200E63DD1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F0EF2E401A26717200E63DD1 /* WaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveViewController.h; sourceTree = "<group>"; };
+		F0EF2E411A26717200E63DD1 /* WaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveViewController.m; sourceTree = "<group>"; };
 		F0EF2E441A26717200E63DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0EF2E461A26717200E63DD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F0EF2E491A26717200E63DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F0EF2E4F1A26717300E63DD1 /* WaveTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EF2E541A26717300E63DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0EF2E551A26717300E63DD1 /* WaveTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveTouchTests.m; sourceTree = "<group>"; };
+		F0EF2E5F1A26769C00E63DD1 /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
+		F0EF2E601A26769C00E63DD1 /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F094F3581A26D77A00789F27 /* Synth */ = {
+			isa = PBXGroup;
+			children = (
+				F01D1B2B1A2774BB00E7E3C5 /* Oscillator.h */,
+				F01D1B2C1A2774BB00E7E3C5 /* Oscillator.m */,
+				F01D1B2D1A2774BB00E7E3C5 /* SynthCore.h */,
+				F01D1B2E1A2774BB00E7E3C5 /* SynthCore.m */,
+				F01D1B2F1A2774BB00E7E3C5 /* SynthGlobals.h */,
+			);
+			name = Synth;
+			sourceTree = "<group>";
+		};
+		F094F3591A26D78400789F27 /* Waveform */ = {
+			isa = PBXGroup;
+			children = (
+				F0EF2E401A26717200E63DD1 /* WaveViewController.h */,
+				F0EF2E411A26717200E63DD1 /* WaveViewController.m */,
+				F0EF2E5F1A26769C00E63DD1 /* WaveView.h */,
+				F0EF2E601A26769C00E63DD1 /* WaveView.m */,
+			);
+			name = Waveform;
+			sourceTree = "<group>";
+		};
 		F0EF2E2D1A26717200E63DD1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +116,8 @@
 			children = (
 				F0EF2E3D1A26717200E63DD1 /* AppDelegate.h */,
 				F0EF2E3E1A26717200E63DD1 /* AppDelegate.m */,
-				F0EF2E401A26717200E63DD1 /* ViewController.h */,
-				F0EF2E411A26717200E63DD1 /* ViewController.m */,
+				F094F3591A26D78400789F27 /* Waveform */,
+				F094F3581A26D77A00789F27 /* Synth */,
 				F0EF2E431A26717200E63DD1 /* Main.storyboard */,
 				F0EF2E461A26717200E63DD1 /* Images.xcassets */,
 				F0EF2E481A26717200E63DD1 /* LaunchScreen.xib */,
@@ -219,9 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0EF2E421A26717200E63DD1 /* ViewController.m in Sources */,
+				F0EF2E421A26717200E63DD1 /* WaveViewController.m in Sources */,
 				F0EF2E3F1A26717200E63DD1 /* AppDelegate.m in Sources */,
 				F0EF2E3C1A26717200E63DD1 /* main.m in Sources */,
+				F01D1B311A2774BB00E7E3C5 /* SynthCore.m in Sources */,
+				F0EF2E611A26769C00E63DD1 /* WaveView.m in Sources */,
+				F01D1B301A2774BB00E7E3C5 /* Oscillator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +379,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jackson Firlik (KTDG96UNHX)";
 				INFOPLIST_FILE = WaveTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -353,9 +392,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jackson Firlik (KTDG96UNHX)";
 				INFOPLIST_FILE = WaveTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -412,6 +454,7 @@
 				F0EF2E5B1A26717300E63DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0EF2E5C1A26717300E63DD1 /* Build configuration list for PBXNativeTarget "WaveTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +463,7 @@
 				F0EF2E5E1A26717300E63DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

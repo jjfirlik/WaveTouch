@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WaveViewController.h
 //  WaveTouch
 //
 //  Created by Jackson Firlik on 11/26/14.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WaveView.h"
 
-@interface ViewController : UIViewController
-
+@interface WaveViewController : UIViewController <WaveViewDelegate>
 
 @end
 
